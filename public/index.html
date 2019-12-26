@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>The Weather App</h1>
+        <div><a href="/">check in</a> | <a href="all.html">view checkins</a></div>
+        
+        <p>
+            The weather here 
+            at <span id="latitude"></span>&deg;, <span id="longitude"></span>&deg;
+            is <span id="summary"></span>
+            with a temperature of <span id ="temperature"></span>
+            &deg; C.
+            <br />
+            The concentration of particulate matter 
+            (<span id="aq_parameter"></span>)
+            is <span id="aq_value"></span> <span id="aq_units"></span>
+            last read on <span id="aq_date"></span>.
+        </p>
+        <button id="geolocate">check in </button>
+        <script src="sketch.js"></script>
+    </body>
+</html>

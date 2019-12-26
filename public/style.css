@@ -1,0 +1,9 @@
+p   {
+    padding : 10px;
+    background-color: #FFAAFF;
+}
+
+#checkinMap { 
+    height: 180px; 
+    margin: 8px 0px;
+}
