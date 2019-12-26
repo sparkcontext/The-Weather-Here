@@ -3,11 +3,12 @@ const Datastore = require('nedb');
 const fetch = require('node-fetch');
 require('dotenv').config();
 
-console.log(process.env);
+//console.log(process.env);
 
 const app = express();
 
-app.listen(3000,() => console.log('listening at 3000'));
+const port = process.env.PORT || 3000;
+app.listen(port,() => console.log(`Staring server at ${port}`));
 
 app.use(express.static('public'));
 
