@@ -45,7 +45,7 @@ app.get('/weather/:latlon',async (request, response) =>{
     const lat = latlon[0];
     const lon = latlon[1];
     console.log(lat,lon);
-    const api_key = process.env.API_KEY//'e9f0aafcb3fb246ef52cff59efaa42fc';
+    const api_key = process.env.API_KEY;
     const weather_url = `https://api.darksky.net/forecast/${api_key}/${lat},${lon}/?units=si`;
     //const api_url = `https://api.darksky.net/forecast/e9f0aafcb3fb246ef52cff59efaa42fc/22.329448499999998,114.1595282`;
     const weather_response = await fetch(weather_url);
